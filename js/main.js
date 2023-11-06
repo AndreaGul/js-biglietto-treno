@@ -1,7 +1,5 @@
 'use strict';
 
-// Scrivere un programma che chieda all’utente:
-
 // 1. Con un prompt chiediamo all'utente il numero di chilometri da percorrere, il valore comunicato dall'utente dovra essere trasformato in un numero con parseint e salveremo il valore in una varibile chiamata kmUtente.
 
 let kmUtente = parseInt(
