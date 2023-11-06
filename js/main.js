@@ -10,6 +10,8 @@ let kmUtente = parseInt(
 
 // 2. Con un'altro prompt chiediamo l'età del passeggero il valore comunicato dall'utente dovra essere trasformato in un numero con parseint e salveremo il valore il una variabile che chiameremo etaUtente.
 
+let etaUtente = parseInt(prompt("Inserire l'età del passeggero"));
+
 // Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
 
 // 3.  Il prezzo del biglietto è definito in base ai km (0.21 € al km),
