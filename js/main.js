@@ -52,3 +52,7 @@ if (etaUtente >= 65) {
 }
 
 // 6.  In fine stampere in console il valore della variabile prezzoBiglietto mostrando al massimo due cifre dopo la virgolain modo tale da rappresentare i centesimi.
+
+prezzoBiglietto = +prezzoBiglietto.toFixed(2);
+
+console.log('prezzo del biglietto:', prezzoBiglietto);
