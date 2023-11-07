@@ -15,7 +15,7 @@ const etaUtente = Number(prompt("Inserire l'età del passeggero"));
 console.log('età del passeggero:', etaUtente);
 
 //verifichiamo che l'utente abbia inserito dei caratteri che siano dei numeri
-if (!isNaN(kmUtente) && !isNaN(kmUtente)) {
+if (!isNaN(kmUtente) && !isNaN(etaUtente)) {
   // Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
 
   // 3.  Il prezzo del biglietto è definito in base ai km (0.21 € al km),
