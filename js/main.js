@@ -21,7 +21,14 @@ if (!isNaN(kmUtente) && !isNaN(etaUtente)) {
   // 3.  Il prezzo del biglietto è definito in base ai km (0.21 € al km),
   //     quindi dichiariamo una variabile prezzoBiglietto che avra come valore la moltiplicazione dei due numeri ossia i chilometri che l'utente deve percorrere conservati nella variabile kmUtente e il prezzo del biglietto a kilometro che dichiariando una variabile prezzo e definendo il suo valore come 0.21.
 
+  //prezzo al kilometro
   const prezzo = 0.21;
+
+  //percentuale sconto minorenni
+  const percentualeScontoMinorenni = 20;
+
+  //percentuale sconto over65
+  const percentualeScontoOver65 = 40;
 
   let prezzoBiglietto = kmUtente * prezzo;
 
@@ -32,7 +39,7 @@ if (!isNaN(kmUtente) && !isNaN(etaUtente)) {
   //     il valore del 20% sarà definito in una varibile che chiamiamo sconto.
 
   if (etaUtente < 18) {
-    const sconto = (prezzoBiglietto * 20) / 100;
+    const sconto = (prezzoBiglietto * percentualeScontoMinorenni) / 100;
 
     prezzoBiglietto -= sconto;
 
@@ -43,7 +50,7 @@ if (!isNaN(kmUtente) && !isNaN(etaUtente)) {
   //     quindi se l'età dell'utente è maggiore o uguale a 65, alla variabile prezzoBiglietto dovra essere sottratto il 40% del suo valore.
   //     il valore del 40% sarà definito in una varibile che chiamiamo sconto.
   else if (etaUtente >= 65) {
-    const sconto = (prezzoBiglietto * 40) / 100;
+    const sconto = (prezzoBiglietto * percentualeScontoOver65) / 100;
 
     prezzoBiglietto -= sconto;
 
