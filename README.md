@@ -13,11 +13,11 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 
 4.  Va applicato uno sconto del 20% per i minorenni,
     quindi se l'età dell'utente è minore di 18 il alla variabile prezzoBiglietto dovra essere sottratto il 20% del suo valore.
-    il valore del 20% sarà definito in una varibile che chiamiamo scontoUnder18.
+    la percentuale la saviamo in una variabile che chiamiamo percentualeScontoMinorenni.
 
 5.  Va applicato uno sconto del 40% per gli over 65.
     quindi se l'età dell'utente è maggiore o uguale a 65, alla variabile prezzoBiglietto dovra essere sottratto il 40% del suo valore.
-    il valore del 40% sarà definito in una varibile che chiamiamo scontoOver65.
+    la percentuale la saviamo in una variabile che chiamiamo percentualeScontoOver65.
 
 6.  L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
     Stamperemo in console il valore della variabile prezzoBiglietto mostrando al massimo due cifre dopo la virgolain modo tale da rappresentare i centesimi.
