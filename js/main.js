@@ -14,10 +14,10 @@ const etaUtente = Number(prompt("Inserire l'età del passeggero"));
 
 console.log('età del passeggero:', etaUtente);
 
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-
 //verifichiamo che l'utente abbia inserito dei caratteri che siano dei numeri
 if (!isNaN(kmUtente) && !isNaN(kmUtente)) {
+  // Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
+
   // 3.  Il prezzo del biglietto è definito in base ai km (0.21 € al km),
   //     quindi dichiariamo una variabile prezzoBiglietto che avra come valore la moltiplicazione dei due numeri ossia i chilometri che l'utente deve percorrere conservati nella variabile kmUtente e il prezzo del biglietto a kilometro che dichiariando una variabile prezzo e definendo il suo valore come 0.21.
 
@@ -56,7 +56,7 @@ if (!isNaN(kmUtente) && !isNaN(kmUtente)) {
 
   console.log('prezzo del biglietto:', prezzoBiglietto);
 }
-//7. possibilità che l'utente abbia inserito dei caratteri diversi un un numero
+//possibilità che l'utente abbia inserito dei caratteri diversi un un numero
 else {
   console.log('ERRORE: hai inserito dei caratteri diversi da un numero');
 }
