@@ -2,7 +2,7 @@
 
 // 1. Con un prompt chiediamo all'utente il numero di chilometri da percorrere, il valore comunicato dall'utente dovra essere trasformato in un numero con parseint e salveremo il valore in una varibile chiamata kmUtente.
 
-let kmUtente = parseInt(
+const kmUtente = parseInt(
   prompt('Inserire il numeri di chilometri da percorrere')
 );
 
@@ -10,7 +10,7 @@ console.log('chilometri che il passeggero deve percorrere:', kmUtente);
 
 // 2. Con un'altro prompt chiediamo l'età del passeggero il valore comunicato dall'utente dovra essere trasformato in un numero con parseint e salveremo il valore il una variabile che chiameremo etaUtente.
 
-let etaUtente = parseInt(prompt("Inserire l'età del passeggero"));
+const etaUtente = parseInt(prompt("Inserire l'età del passeggero"));
 
 console.log('età del passeggero:', etaUtente);
 
@@ -40,8 +40,7 @@ if (etaUtente < 18) {
 // 5.  Va applicato uno sconto del 40% per gli over 65.
 //     quindi se l'età dell'utente è maggiore o uguale a 65, alla variabile prezzoBiglietto dovra essere sottratto il 40% del suo valore.
 //     il valore del 40% sarà definito in una varibile che chiamiamo sconto.
-
-if (etaUtente >= 65) {
+else if (etaUtente >= 65) {
   const sconto = (prezzoBiglietto * 40) / 100;
 
   prezzoBiglietto -= sconto;
